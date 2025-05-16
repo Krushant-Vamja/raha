@@ -3,6 +3,10 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import sc1 from "../assets/sc1.png";
+import c1 from "../assets/c1.svg";
+import c2 from "../assets/c2.svg";
+import c3 from "../assets/c3.svg";
+import c4 from "../assets/c4.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -83,7 +87,7 @@ const Contact = () => {
           {/* Phone */}
           <div className="flex flex-col items-center text-center">
             <div className="bg-[#7f614f] rounded-full w-16 h-16 flex items-center justify-center mb-4">
-              <Phone className="text-white" size={24} />
+              <img src={c1} />
             </div>
             <h3 className="font-medium mb-1">Phone</h3>
             <p className="text-sm mb-1">+91 98765 43210</p>
@@ -93,7 +97,7 @@ const Contact = () => {
           {/* Email */}
           <div className="flex flex-col items-center text-center">
             <div className="bg-[#7f614f] rounded-full w-16 h-16 flex items-center justify-center mb-4">
-              <Mail className="text-white" size={24} />
+              <img src={c2} />
             </div>
             <h3 className="font-medium mb-1">Email</h3>
             <p className="text-sm mb-1">care@rahaorganics.com</p>
@@ -103,7 +107,7 @@ const Contact = () => {
           {/* Address */}
           <div className="flex flex-col items-center text-center">
             <div className="bg-[#7f614f] rounded-full w-16 h-16 flex items-center justify-center mb-4">
-              <MapPin className="text-white" size={24} />
+              <img src={c3} />
             </div>
             <h3 className="font-medium mb-1">Address</h3>
             <p className="text-sm mb-1">123 Ayurveda Lane, Mumbai</p>
@@ -113,7 +117,7 @@ const Contact = () => {
           {/* WhatsApp */}
           <div className="flex flex-col items-center text-center">
             <div className="bg-[#7f614f] rounded-full w-16 h-16 flex items-center justify-center mb-4">
-              <MessageCircle className="text-white" size={24} />
+              <img src={c4} />
             </div>
             <h3 className="font-medium mb-1">WhatsApp</h3>
             <p className="text-sm mb-1">+91 98765 43210</p>
